@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0575ABFEFA19922B9FDBF5E30A08F81C /* AELog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D102832E19D49D452C9FA57E1B1A47CD /* AELog.framework */; };
+		061946DC8AF2232A0D2AC2B566FB1FA8 /* AELog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F18C1CAAE868F84323755CB77147B88 /* AELog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		124F6B586C343142A4289C52D4A348A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E91043B325362C1D9AC3A7594ADFEA9 /* Foundation.framework */; };
+		252F09C366ADBAF69F92ED41ECA71C51 /* AEConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C7BA2E153E46397D63E0A481CD5F6C /* AEConsole.swift */; };
+		2985C8A524109C150B8CF9D58AA07421 /* AEConsole-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F3FAFB981699DAF4FA82B54EE5F1D /* AEConsole-dummy.m */; };
+		3C1F0F8296A798AF08BEA54C3D3EFDB3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD2F52C2BDB3BE453D7C639BDCF464 /* View.swift */; };
+		510FBDABCA06190C047326903EC9912D /* Pods-BlueToothPeripheral-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8731650828ABB4B1338DDE16BA04EA46 /* Pods-BlueToothPeripheral-dummy.m */; };
+		75E4361107B4736023F2EB5798BA91FD /* AEConsole-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 702F792112F28555037C66020084DFC8 /* AEConsole-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81613FA0E9826B79365D03CBDACE88FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E91043B325362C1D9AC3A7594ADFEA9 /* Foundation.framework */; };
+		9486C6CC899C31E4BB98C948934DB765 /* AELog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF53D7E2CBB184EF44275226569AD /* AELog.swift */; };
+		AA0C54CD884CF3C32575E019E9636540 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D82275ED46C1B4452BD716BE4CD8CA /* Brain.swift */; };
+		ADE8A51A324A6A1F9464193EBB12442E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E421E89030336C2F9AF3D31380B02 /* Config.swift */; };
+		C20DC2A483456900709406E220035B65 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F3B397E0D5E80854F21D4B77D930F /* Cell.swift */; };
+		CADDFAA0D7A3789D53204ED6B2EA7ED5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376758C22F41EDA6DA97C92D47C92A88 /* Config.swift */; };
+		D38D6468D4741FB03DE06D535ED04780 /* Pods-BlueToothPeripheral-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0050C6295385AC4D6976BF259BE780AC /* Pods-BlueToothPeripheral-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E10E9A53FC83919892C5FBE3DB6F1BE1 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F44634D3676CE4B2F197E1CE9FA14B9 /* Line.swift */; };
+		F5183C02C88F1F680D6E96645270C44F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E91043B325362C1D9AC3A7594ADFEA9 /* Foundation.framework */; };
+		F81A0E06C8EAA6A0DC3A822262417704 /* AELog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9984304877F76C8887BBA0C01D0723A3 /* AELog-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15C4BF8F2C9F5086BBD8C268AD1B3764 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFE76EE164F7F80044CE110959154733;
+			remoteInfo = AELog;
+		};
+		A324F601DBF966130936127EFED86143 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F038F6A79CC3FA1A67AACEE3F40A1A30;
+			remoteInfo = AEConsole;
+		};
+		FBC07D42E780285D9CEFB18C870C5757 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFE76EE164F7F80044CE110959154733;
+			remoteInfo = AELog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0050C6295385AC4D6976BF259BE780AC /* Pods-BlueToothPeripheral-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlueToothPeripheral-umbrella.h"; sourceTree = "<group>"; };
+		0A6F3FAFB981699DAF4FA82B54EE5F1D /* AEConsole-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AEConsole-dummy.m"; sourceTree = "<group>"; };
+		0F44634D3676CE4B2F197E1CE9FA14B9 /* Line.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Line.swift; path = Sources/Line.swift; sourceTree = "<group>"; };
+		11E4F7CE5D5065D292B29206E5713B13 /* Pods-BlueToothPeripheral.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueToothPeripheral.release.xcconfig"; sourceTree = "<group>"; };
+		28DEF53D7E2CBB184EF44275226569AD /* AELog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AELog.swift; path = Sources/AELog.swift; sourceTree = "<group>"; };
+		376758C22F41EDA6DA97C92D47C92A88 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Sources/Config.swift; sourceTree = "<group>"; };
+		39EE3A2E358D5867BC38398EB5E244C7 /* AELog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AELog-prefix.pch"; sourceTree = "<group>"; };
+		3E1E421E89030336C2F9AF3D31380B02 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Sources/Config.swift; sourceTree = "<group>"; };
+		44C7BA2E153E46397D63E0A481CD5F6C /* AEConsole.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AEConsole.swift; path = Sources/AEConsole.swift; sourceTree = "<group>"; };
+		46686165F703346DFC9CC5310B1D4469 /* AELog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AELog.modulemap; sourceTree = "<group>"; };
+		534756DAEC6F74A1258762DF70C0EB57 /* Pods-BlueToothPeripheral-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueToothPeripheral-acknowledgements.plist"; sourceTree = "<group>"; };
+		65665C0B5954432AC299A23ED57026B6 /* AELog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AELog.framework; path = AELog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A2DBDC858217FA9F9630F700DB875AA /* AEConsole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AEConsole.framework; path = AEConsole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		702F792112F28555037C66020084DFC8 /* AEConsole-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEConsole-umbrella.h"; sourceTree = "<group>"; };
+		7101B1EA105C4E3EAF2AFE9A173C1FA7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7757ED5210438105388F7579171650F0 /* Pods_BlueToothPeripheral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlueToothPeripheral.framework; path = "Pods-BlueToothPeripheral.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D82275ED46C1B4452BD716BE4CD8CA /* Brain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Brain.swift; path = Sources/Brain.swift; sourceTree = "<group>"; };
+		7EC289489CB3AD509F6700914322B54C /* AELog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AELog.xcconfig; sourceTree = "<group>"; };
+		8134B2B082391F3AA8B68B27398AED66 /* Pods-BlueToothPeripheral.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BlueToothPeripheral.modulemap"; sourceTree = "<group>"; };
+		8731650828ABB4B1338DDE16BA04EA46 /* Pods-BlueToothPeripheral-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueToothPeripheral-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9984304877F76C8887BBA0C01D0723A3 /* AELog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AELog-dummy.m"; sourceTree = "<group>"; };
+		9E91043B325362C1D9AC3A7594ADFEA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9F18C1CAAE868F84323755CB77147B88 /* AELog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AELog-umbrella.h"; sourceTree = "<group>"; };
+		A0E65E65C8C964804B59D74B8A929D64 /* Pods-BlueToothPeripheral-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueToothPeripheral-resources.sh"; sourceTree = "<group>"; };
+		A52504C4A5F6F366A385F9A569DD18D5 /* Pods-BlueToothPeripheral.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueToothPeripheral.debug.xcconfig"; sourceTree = "<group>"; };
+		A636F12CB1DCA3FC29EB7D7CCC2F83CA /* AEConsole.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AEConsole.xcconfig; sourceTree = "<group>"; };
+		A6ED296B8E26F11561D52C271FCEA192 /* AEConsole.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AEConsole.modulemap; sourceTree = "<group>"; };
+		A80FCC39EC3D49E17DD704D4ACABB88A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B197EC2ADD1640918E548353DF80968F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F2DBF761DFE3E1711252BD5ACA5C8F /* Pods-BlueToothPeripheral-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlueToothPeripheral-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BBAD2F52C2BDB3BE453D7C639BDCF464 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Sources/View.swift; sourceTree = "<group>"; };
+		C681CEEBE48D7973BD7E134A8044B94E /* AEConsole-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEConsole-prefix.pch"; sourceTree = "<group>"; };
+		D102832E19D49D452C9FA57E1B1A47CD /* AELog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AELog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D8C3F6E78C9E64102901D18C2240FC /* Pods-BlueToothPeripheral-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueToothPeripheral-frameworks.sh"; sourceTree = "<group>"; };
+		FA9F3B397E0D5E80854F21D4B77D930F /* Cell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Sources/Cell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		308561EA87FC7FC8684C1E00A2A71140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5183C02C88F1F680D6E96645270C44F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F92C6E600BE50112791FF5460E76A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0575ABFEFA19922B9FDBF5E30A08F81C /* AELog.framework in Frameworks */,
+				124F6B586C343142A4289C52D4A348A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB745247B77E50089FE8CB8A9F59A072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81613FA0E9826B79365D03CBDACE88FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B09D6BCFD746428083CB99ECCA140DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD9508AB546230AFEDD8E9696C56F1D4 /* AEConsole */,
+				7F7DF70A2927568908FBBA4D192D6EE3 /* AELog */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5734870A8EA03279117224EC13CB87B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D102832E19D49D452C9FA57E1B1A47CD /* AELog.framework */,
+				92B829761CC019725BD55B2400DEABA0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65BF9B50D4B14CC90B3334D725A05CBA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B42F0421FE0C9CAB830D05A07E18B449 /* Pods-BlueToothPeripheral */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		66AB385E36339278E09E1CA31B72649B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A2DBDC858217FA9F9630F700DB875AA /* AEConsole.framework */,
+				65665C0B5954432AC299A23ED57026B6 /* AELog.framework */,
+				7757ED5210438105388F7579171650F0 /* Pods_BlueToothPeripheral.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A62D0260741921DE0C5FF5D984CC47E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6ED296B8E26F11561D52C271FCEA192 /* AEConsole.modulemap */,
+				A636F12CB1DCA3FC29EB7D7CCC2F83CA /* AEConsole.xcconfig */,
+				0A6F3FAFB981699DAF4FA82B54EE5F1D /* AEConsole-dummy.m */,
+				C681CEEBE48D7973BD7E134A8044B94E /* AEConsole-prefix.pch */,
+				702F792112F28555037C66020084DFC8 /* AEConsole-umbrella.h */,
+				B197EC2ADD1640918E548353DF80968F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AEConsole";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				5734870A8EA03279117224EC13CB87B4 /* Frameworks */,
+				3B09D6BCFD746428083CB99ECCA140DF /* Pods */,
+				66AB385E36339278E09E1CA31B72649B /* Products */,
+				65BF9B50D4B14CC90B3334D725A05CBA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F7DF70A2927568908FBBA4D192D6EE3 /* AELog */ = {
+			isa = PBXGroup;
+			children = (
+				28DEF53D7E2CBB184EF44275226569AD /* AELog.swift */,
+				376758C22F41EDA6DA97C92D47C92A88 /* Config.swift */,
+				0F44634D3676CE4B2F197E1CE9FA14B9 /* Line.swift */,
+				D47C9146A2D4C267C1C3AB314B6BC1C2 /* Support Files */,
+			);
+			name = AELog;
+			path = AELog;
+			sourceTree = "<group>";
+		};
+		92B829761CC019725BD55B2400DEABA0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9E91043B325362C1D9AC3A7594ADFEA9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B42F0421FE0C9CAB830D05A07E18B449 /* Pods-BlueToothPeripheral */ = {
+			isa = PBXGroup;
+			children = (
+				A80FCC39EC3D49E17DD704D4ACABB88A /* Info.plist */,
+				8134B2B082391F3AA8B68B27398AED66 /* Pods-BlueToothPeripheral.modulemap */,
+				B5F2DBF761DFE3E1711252BD5ACA5C8F /* Pods-BlueToothPeripheral-acknowledgements.markdown */,
+				534756DAEC6F74A1258762DF70C0EB57 /* Pods-BlueToothPeripheral-acknowledgements.plist */,
+				8731650828ABB4B1338DDE16BA04EA46 /* Pods-BlueToothPeripheral-dummy.m */,
+				D2D8C3F6E78C9E64102901D18C2240FC /* Pods-BlueToothPeripheral-frameworks.sh */,
+				A0E65E65C8C964804B59D74B8A929D64 /* Pods-BlueToothPeripheral-resources.sh */,
+				0050C6295385AC4D6976BF259BE780AC /* Pods-BlueToothPeripheral-umbrella.h */,
+				A52504C4A5F6F366A385F9A569DD18D5 /* Pods-BlueToothPeripheral.debug.xcconfig */,
+				11E4F7CE5D5065D292B29206E5713B13 /* Pods-BlueToothPeripheral.release.xcconfig */,
+			);
+			name = "Pods-BlueToothPeripheral";
+			path = "Target Support Files/Pods-BlueToothPeripheral";
+			sourceTree = "<group>";
+		};
+		BD9508AB546230AFEDD8E9696C56F1D4 /* AEConsole */ = {
+			isa = PBXGroup;
+			children = (
+				44C7BA2E153E46397D63E0A481CD5F6C /* AEConsole.swift */,
+				77D82275ED46C1B4452BD716BE4CD8CA /* Brain.swift */,
+				FA9F3B397E0D5E80854F21D4B77D930F /* Cell.swift */,
+				3E1E421E89030336C2F9AF3D31380B02 /* Config.swift */,
+				BBAD2F52C2BDB3BE453D7C639BDCF464 /* View.swift */,
+				7A62D0260741921DE0C5FF5D984CC47E /* Support Files */,
+			);
+			name = AEConsole;
+			path = AEConsole;
+			sourceTree = "<group>";
+		};
+		D47C9146A2D4C267C1C3AB314B6BC1C2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				46686165F703346DFC9CC5310B1D4469 /* AELog.modulemap */,
+				7EC289489CB3AD509F6700914322B54C /* AELog.xcconfig */,
+				9984304877F76C8887BBA0C01D0723A3 /* AELog-dummy.m */,
+				39EE3A2E358D5867BC38398EB5E244C7 /* AELog-prefix.pch */,
+				9F18C1CAAE868F84323755CB77147B88 /* AELog-umbrella.h */,
+				7101B1EA105C4E3EAF2AFE9A173C1FA7 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AELog";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		850A44E7FEBB6ECAC2D75D658C2662ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061946DC8AF2232A0D2AC2B566FB1FA8 /* AELog-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19C5FFF51CEB8D7699BA6562500C317 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E4361107B4736023F2EB5798BA91FD /* AEConsole-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F652057AB8A0FE61D02A3408055D204E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38D6468D4741FB03DE06D535ED04780 /* Pods-BlueToothPeripheral-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6C511503DEBD8FE88A7D50B5EEABB3C5 /* Pods-BlueToothPeripheral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6682192F7F18DB7283B94DBA087D3767 /* Build configuration list for PBXNativeTarget "Pods-BlueToothPeripheral" */;
+			buildPhases = (
+				0CD5370DE727F5CA83682B95644D98C1 /* Sources */,
+				EB745247B77E50089FE8CB8A9F59A072 /* Frameworks */,
+				F652057AB8A0FE61D02A3408055D204E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52B3E252D4230B7046318D1CDF3246A2 /* PBXTargetDependency */,
+				42592065592AE5AF1A958F0F76536BB1 /* PBXTargetDependency */,
+			);
+			name = "Pods-BlueToothPeripheral";
+			productName = "Pods-BlueToothPeripheral";
+			productReference = 7757ED5210438105388F7579171650F0 /* Pods_BlueToothPeripheral.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFE76EE164F7F80044CE110959154733 /* AELog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB0303E9AB00255E64C4BCA93EBC91C2 /* Build configuration list for PBXNativeTarget "AELog" */;
+			buildPhases = (
+				0DFFF1DE5E858373DF151A913DB412EB /* Sources */,
+				308561EA87FC7FC8684C1E00A2A71140 /* Frameworks */,
+				850A44E7FEBB6ECAC2D75D658C2662ED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AELog;
+			productName = AELog;
+			productReference = 65665C0B5954432AC299A23ED57026B6 /* AELog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F038F6A79CC3FA1A67AACEE3F40A1A30 /* AEConsole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02795FDA2AEEC68B7EFC3A5894A3CA44 /* Build configuration list for PBXNativeTarget "AEConsole" */;
+			buildPhases = (
+				C18377E44FE9468F1DAF0479ED0E4D34 /* Sources */,
+				B9F92C6E600BE50112791FF5460E76A3 /* Frameworks */,
+				D19C5FFF51CEB8D7699BA6562500C317 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36B1342C41F3B9F62D23DEA29F533D04 /* PBXTargetDependency */,
+			);
+			name = AEConsole;
+			productName = AEConsole;
+			productReference = 6A2DBDC858217FA9F9630F700DB875AA /* AEConsole.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 66AB385E36339278E09E1CA31B72649B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F038F6A79CC3FA1A67AACEE3F40A1A30 /* AEConsole */,
+				EFE76EE164F7F80044CE110959154733 /* AELog */,
+				6C511503DEBD8FE88A7D50B5EEABB3C5 /* Pods-BlueToothPeripheral */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CD5370DE727F5CA83682B95644D98C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510FBDABCA06190C047326903EC9912D /* Pods-BlueToothPeripheral-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DFFF1DE5E858373DF151A913DB412EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81A0E06C8EAA6A0DC3A822262417704 /* AELog-dummy.m in Sources */,
+				9486C6CC899C31E4BB98C948934DB765 /* AELog.swift in Sources */,
+				CADDFAA0D7A3789D53204ED6B2EA7ED5 /* Config.swift in Sources */,
+				E10E9A53FC83919892C5FBE3DB6F1BE1 /* Line.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18377E44FE9468F1DAF0479ED0E4D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2985C8A524109C150B8CF9D58AA07421 /* AEConsole-dummy.m in Sources */,
+				252F09C366ADBAF69F92ED41ECA71C51 /* AEConsole.swift in Sources */,
+				AA0C54CD884CF3C32575E019E9636540 /* Brain.swift in Sources */,
+				C20DC2A483456900709406E220035B65 /* Cell.swift in Sources */,
+				ADE8A51A324A6A1F9464193EBB12442E /* Config.swift in Sources */,
+				3C1F0F8296A798AF08BEA54C3D3EFDB3 /* View.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36B1342C41F3B9F62D23DEA29F533D04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AELog;
+			target = EFE76EE164F7F80044CE110959154733 /* AELog */;
+			targetProxy = FBC07D42E780285D9CEFB18C870C5757 /* PBXContainerItemProxy */;
+		};
+		42592065592AE5AF1A958F0F76536BB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AELog;
+			target = EFE76EE164F7F80044CE110959154733 /* AELog */;
+			targetProxy = 15C4BF8F2C9F5086BBD8C268AD1B3764 /* PBXContainerItemProxy */;
+		};
+		52B3E252D4230B7046318D1CDF3246A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AEConsole;
+			target = F038F6A79CC3FA1A67AACEE3F40A1A30 /* AEConsole */;
+			targetProxy = A324F601DBF966130936127EFED86143 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		266E9D9C8F7E85EE87F7EC3671750092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EC289489CB3AD509F6700914322B54C /* AELog.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AELog/AELog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AELog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AELog/AELog.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AELog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		32F0EBAB832E475696CD8FE8F7E424AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E4F7CE5D5065D292B29206E5713B13 /* Pods-BlueToothPeripheral.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueToothPeripheral/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueToothPeripheral/Pods-BlueToothPeripheral.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlueToothPeripheral;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ADBD9BD08C0AD8B29F92D028FF7E1423 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EC289489CB3AD509F6700914322B54C /* AELog.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AELog/AELog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AELog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AELog/AELog.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AELog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B8CB21F394495176CBB4BDD9B1087022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A636F12CB1DCA3FC29EB7D7CCC2F83CA /* AEConsole.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AEConsole/AEConsole-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AEConsole/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AEConsole/AEConsole.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AEConsole;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BBBA650F8FBB737DCE298FE7765182B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A636F12CB1DCA3FC29EB7D7CCC2F83CA /* AEConsole.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AEConsole/AEConsole-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AEConsole/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AEConsole/AEConsole.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AEConsole;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C91ADF146908BDD5F64792EE67F7E1E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A52504C4A5F6F366A385F9A569DD18D5 /* Pods-BlueToothPeripheral.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueToothPeripheral/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueToothPeripheral/Pods-BlueToothPeripheral.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlueToothPeripheral;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EED546DBB23FC32035C9BDC4E22B30BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02795FDA2AEEC68B7EFC3A5894A3CA44 /* Build configuration list for PBXNativeTarget "AEConsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBBA650F8FBB737DCE298FE7765182B0 /* Debug */,
+				B8CB21F394495176CBB4BDD9B1087022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED546DBB23FC32035C9BDC4E22B30BD /* Debug */,
+				157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6682192F7F18DB7283B94DBA087D3767 /* Build configuration list for PBXNativeTarget "Pods-BlueToothPeripheral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91ADF146908BDD5F64792EE67F7E1E9 /* Debug */,
+				32F0EBAB832E475696CD8FE8F7E424AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB0303E9AB00255E64C4BCA93EBC91C2 /* Build configuration list for PBXNativeTarget "AELog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266E9D9C8F7E85EE87F7EC3671750092 /* Debug */,
+				ADBD9BD08C0AD8B29F92D028FF7E1423 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
