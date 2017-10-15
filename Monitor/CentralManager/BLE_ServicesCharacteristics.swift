@@ -21,21 +21,24 @@ extension BLECentralManager {
     func discoverServicesAndCharac() {
         bleError = ""
         servicesDiscovered.removeAll()
+        
+        //calls delegate method below to load all services from peripheral
         peripheralConnected?.discoverServices( nil )
+
     }
 
 
     
     func setNotify(characteristicUUID: String) {
 
-        peripheralConnected?.services?.forEach({ (oneService) in
-            oneService.characteristics?.forEach({ (oneCharacteristic) in
-                if oneCharacteristic.uuid == CBUUID(string: characteristicUUID) {
-                    peripheralConnected?.setNotifyValue(true, for: oneCharacteristic)
-                    log("request notification done")
-                }
-            })
-        })
+//        peripheralConnected?.services?.forEach({ (oneService) in
+//            oneService.characteristics?.forEach({ (oneCharacteristic) in
+//                if oneCharacteristic.uuid == CBUUID(string: characteristicUUID) {
+//                    peripheralConnected?.setNotifyValue(true, for: oneCharacteristic)
+//                    log("request notification done")
+//                }
+//            })
+//        })
         
     }
     
@@ -60,7 +63,6 @@ extension BLECentralManager {
             // discopver the characteristics for that service
             peripheral.discoverCharacteristics(nil, for: oneService)
         })
-        
     }
     
     
@@ -85,6 +87,12 @@ extension BLECentralManager {
         service.characteristics?.forEach({ (oneCharacteristic) in
             log("-- Characteristic : " + Tools.toString( oneCharacteristic.uuid.uuidString ))
         })
+        
+        for characteristics  in service.characteristics! {
+            if characteristics.uuid.uuidString == "2AC6A7BF-2C60-42D0-8013-AECEF2A124C0" {
+                peripheral.setNotifyValue(true, for: characteristics)
+            }
+        }
         
         isServicesDiscovered = true
         

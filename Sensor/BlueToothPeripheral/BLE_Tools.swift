@@ -37,7 +37,8 @@ extension BLEPeripheralManager {
         delegate?.logToScreen(text: "Notifying health data to KP Health Monitor")
         
         // Set the data to notify
-        let text = "Heartrate:\(heartRate) BodyTemperature:\(bodyTemperature) Systolic:\(systolic) Diastolic:\(diastolic)"
+//        let text = "Heartrate:\(heartRate) BodyTemperature:\(bodyTemperature) Systolic:\(systolic) Diastolic:\(diastolic)"
+        let text = "\(heartRate),\(bodyTemperature),\(systolic),\(diastolic)"
         let data: Data = text.data(using: String.Encoding.utf16)!
         
         delegate?.logToScreen(text: text)

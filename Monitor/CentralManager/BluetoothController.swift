@@ -192,7 +192,9 @@ class BluetoothController: BLEProtocol {
     }
     
     func requestNotify(uuid: String) {
+        log("trying to notifiy")
         ble.setNotify(characteristicUUID: uuid)
+        log("notify done")
     }
     
     
