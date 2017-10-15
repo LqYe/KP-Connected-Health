@@ -84,6 +84,8 @@ class ViewController: UIViewController, BLEProtocol {
         
         monitorView.isHidden = true
         warningLabel.isHidden = true
+        
+        initPulsators()
     }
     
     func log(_ object: Any?) {
@@ -109,14 +111,7 @@ class ViewController: UIViewController, BLEProtocol {
         //RH Healthness gives much better implementation of bluetooth pattern
         //the code here is messy
         
-        self.connectionButton.layer.addSublayer(self.connectionPulsator)
-        self.connectionButton.layoutIfNeeded()
-//        self.connectionPulsator.anchorPoint = CGPoint(x: self.connectionButton.center.x, y: self.connectionButton.center.y)
-
-        self.connectionPulsator.position = CGPoint(x: self.connectionButton.frame.width/2, y: self.connectionButton.frame.height/2)
-        self.connectionPulsator.numPulse = 5
-        self.connectionPulsator.radius = 120.0
-        self.connectionPulsator.backgroundColor = UIColor.white.cgColor
+ 
         self.connectionPulsator.start()
         
         DispatchQueue.global(qos: DispatchQoS.QoSClass.background).async {
@@ -185,7 +180,53 @@ class ViewController: UIViewController, BLEProtocol {
             self.connectionStatusLabel.text = "Connected to KP Health Sensor"
             self.monitorView.isHidden = false
             
+            
+            self.hPulsator.backgroundColor = UIColor.white.cgColor
+            self.hPulsator.start()
+
+            
+            self.tPulsator.backgroundColor = UIColor.white.cgColor
+            self.tPulsator.start()
+            
+            
+            self.pPulsator.backgroundColor = UIColor.white.cgColor
+            self.pPulsator.start()
+            
         }
+    }
+    
+    func initPulsators() {
+        
+        self.connectionButton.layer.addSublayer(self.connectionPulsator)
+        self.connectionButton.layoutIfNeeded()
+        self.connectionPulsator.position = CGPoint(x: self.connectionButton.frame.width/2, y: self.connectionButton.frame.height/2)
+        self.connectionPulsator.numPulse = 5
+        self.connectionPulsator.radius = 85
+        self.connectionPulsator.backgroundColor = UIColor.white.cgColor
+        
+        self.heartImageView.layer.addSublayer(self.hPulsator)
+        self.heartImageView.layoutIfNeeded()
+        self.hPulsator.position = CGPoint(x: self.heartImageView.frame.width/2, y: self.heartImageView.frame.height/2)
+        self.hPulsator.numPulse = 3
+        self.hPulsator.radius = 60.0
+        self.hPulsator.backgroundColor = UIColor.white.cgColor
+        
+        
+        self.tempImageView.layer.addSublayer(self.tPulsator)
+        self.tempImageView.layoutIfNeeded()
+        self.tPulsator.position = CGPoint(x: self.tempImageView.frame.width/2, y: self.tempImageView.frame.height/2)
+        self.tPulsator.numPulse = 3
+        self.tPulsator.radius = 60.0
+        self.tPulsator.backgroundColor = UIColor.white.cgColor
+        
+        
+        self.pressureImageView.layer.addSublayer(self.pPulsator)
+        self.pressureImageView.layoutIfNeeded()
+        self.pPulsator.position = CGPoint(x: self.pressureImageView.frame.width/2, y: self.pressureImageView.frame.height/2)
+        self.pPulsator.numPulse = 3
+        self.pPulsator.radius = 60.0
+        self.pPulsator.backgroundColor = UIColor.white.cgColor
+        
     }
     
     func read() {
@@ -203,9 +244,32 @@ class ViewController: UIViewController, BLEProtocol {
         //self.addText(text: "Read : " + message)
         let messageArray = message.components(separatedBy: ",")
         
-        self.bpmLabel.text = "\(messageArray[0]) bpm"
-        self.tempLabel.text = "\(messageArray[1]) ℉"
-        self.pressureLabel.text = "\(messageArray[2])/\(messageArray[3]) mmHg"    }
+        let heartBeat = Int(messageArray[0]) ?? 70
+        let temp = Int(messageArray[1]) ?? 97
+        let systolic = Int(messageArray[2]) ?? 120
+        let diastolic = Int(messageArray[3]) ?? 80
+
+        if heartBeat <= 100 && heartBeat >= 60 {
+            self.hPulsator.backgroundColor = UIColor.green.cgColor
+        } else {
+            self.hPulsator.backgroundColor = UIColor.blue.cgColor
+        }
+        
+        if temp < 100 && temp >= 96  {
+            self.tPulsator.backgroundColor = UIColor.green.cgColor
+        } else {
+            self.tPulsator.backgroundColor = UIColor.blue.cgColor
+        }
+        
+        if systolic <= 120 && systolic >= 80 && diastolic <= 80  && diastolic >= 60 {
+            self.pPulsator.backgroundColor = UIColor.green.cgColor
+        } else {
+            self.pPulsator.backgroundColor = UIColor.blue.cgColor
+        }
+        
+        self.bpmLabel.text = "\(heartBeat) bpm"
+        self.tempLabel.text = "\(temp) ℉"
+        self.pressureLabel.text = "\(systolic)/\(diastolic) mmHg"    }
     
     func valueWrite(message: String) {
         self.addText(text: "write : " + message)

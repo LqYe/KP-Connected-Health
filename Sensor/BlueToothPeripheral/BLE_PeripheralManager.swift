@@ -190,7 +190,7 @@ class BLEPeripheralManager : NSObject, CBPeripheralManagerDelegate {
             self.notifyCentral = central
             
             // start a timer, which will update the value, every xyz seconds.
-            self.notifyValueTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(self.notifyValue), userInfo: nil, repeats: true)
+            self.notifyValueTimer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.notifyValue), userInfo: nil, repeats: true)
         }
 
     }
