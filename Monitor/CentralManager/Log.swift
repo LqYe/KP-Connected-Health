@@ -2,8 +2,8 @@
 //  Log.swift
 //  CentralManager
 //
-//  Created by Olivier Robin on 04/03/2017.
-//  Copyright © 2017 fr.ormaa. All rights reserved.
+//  Created by Liqiang Ye on 10/13/2017.
+//  Copyright © 2017 Liqiang Ye All rights reserved.
 //
 
 import Foundation
@@ -11,12 +11,12 @@ import Foundation
 
 class Log {
 
-    let shared = UserDefaults(suiteName: "group.fr.ormaa")
+    let shared = UserDefaults(suiteName: "group.Liqiang Yecentral.log")
     var logStr = ""
     
     // Delete log file
     func deleteLog() {
-        shared?.removeObject(forKey: "group.fr.ormaa.central.log")
+        shared?.removeObject(forKey: "group.Liqiang Yecentral.log")
     }
     
     // save log to nsUserDefault.
@@ -24,7 +24,7 @@ class Log {
     // when this app is in background for example !
     //
     func saveLog(value: String) {
-        shared?.setValue(value + "\n", forKey: "group.fr.ormaa.central.log")
+        shared?.setValue(value + "\n", forKey: "group.Liqiang Yecentral.log")
     }
 
     // log an object

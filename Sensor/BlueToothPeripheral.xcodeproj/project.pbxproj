@@ -12,7 +12,6 @@
 		1C2516A31DC688080069E6AB /* BLE_PeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2516A21DC688080069E6AB /* BLE_PeripheralManager.swift */; };
 		1C4D538D1E6D59290013BD02 /* BLE_Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4D538C1E6D59290013BD02 /* BLE_Tools.swift */; };
 		1CFB9B341DC5EA6800C51C7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFB9B331DC5EA6800C51C7E /* AppDelegate.swift */; };
-		1CFB9B361DC5EA6800C51C7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFB9B351DC5EA6800C51C7E /* ViewController.swift */; };
 		1CFB9B391DC5EA6800C51C7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB9B371DC5EA6800C51C7E /* Main.storyboard */; };
 		1CFB9B3B1DC5EA6800C51C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB9B3A1DC5EA6800C51C7E /* Assets.xcassets */; };
 		1CFB9B3E1DC5EA6800C51C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB9B3C1DC5EA6800C51C7E /* LaunchScreen.storyboard */; };
@@ -29,7 +28,6 @@
 		1C4D538C1E6D59290013BD02 /* BLE_Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLE_Tools.swift; sourceTree = "<group>"; };
 		1CFB9B301DC5EA6800C51C7E /* BlueToothPeripheral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueToothPeripheral.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CFB9B331DC5EA6800C51C7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1CFB9B351DC5EA6800C51C7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1CFB9B381DC5EA6800C51C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CFB9B3A1DC5EA6800C51C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CFB9B3D1DC5EA6800C51C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 			children = (
 				1CFB9B331DC5EA6800C51C7E /* AppDelegate.swift */,
 				1CFB9B551DC6696100C51C7E /* Tools.swift */,
-				1CFB9B351DC5EA6800C51C7E /* ViewController.swift */,
 				1C2516A21DC688080069E6AB /* BLE_PeripheralManager.swift */,
 				1C4D538C1E6D59290013BD02 /* BLE_Tools.swift */,
 				1C0019541E6D51B700B05304 /* BLE_Protocol.swift */,
@@ -138,7 +135,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = fr.ormaa;
+				ORGANIZATIONNAME = com.yeliqiang;
 				TargetAttributes = {
 					1CFB9B2F1DC5EA6800C51C7E = {
 						CreatedOnToolsVersion = 8.0;
@@ -240,7 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CFB9B361DC5EA6800C51C7E /* ViewController.swift in Sources */,
 				1C2516A31DC688080069E6AB /* BLE_PeripheralManager.swift in Sources */,
 				1CFB9B341DC5EA6800C51C7E /* AppDelegate.swift in Sources */,
 				1CFB9B561DC6696100C51C7E /* Tools.swift in Sources */,

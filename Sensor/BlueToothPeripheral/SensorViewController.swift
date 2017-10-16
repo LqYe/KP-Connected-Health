@@ -2,22 +2,17 @@
 //  SensorViewController.swift
 //  BlueToothPeripheral
 //
-//  Created by Liqiang Ye on 10/13/17.
-//  Copyright © 2017 fr.ormaa. All rights reserved.
+//  Created by Liqiang Ye on 10/13/2017.
+//  Copyright © 2017 Liqiang Ye All rights reserved.
 //
 
 import UIKit
 
-class SensorViewController: UIViewController, BLEPeripheralProtocol{
+class SensorViewController: UIViewController, BLEPeripheralProtocol {
     
-    @IBOutlet weak var logTextView: UITextView!
     
     func logToScreen(text: String) {
         print(text)
-        var str = logTextView.text + "\n"
-        str += text
-        logTextView.text = str
-        logTextView.setContentOffset(CGPoint.zero, animated: false)
     }
     
     @IBOutlet weak var powerButton: UIButton!
@@ -35,8 +30,6 @@ class SensorViewController: UIViewController, BLEPeripheralProtocol{
         powerButton.setImage(UIImage(named: "on"), for: .selected)
         powerButton.setImage(UIImage(named: "off"), for: .normal)
         sensorControllerView.isHidden = true
-        logTextView.isHidden = true
-        logTextView.setContentOffset(CGPoint.zero, animated: false)
 
         // Do any additional setup after loading the view.
     }

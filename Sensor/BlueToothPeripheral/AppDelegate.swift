@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  BlueToothPeripheral
 //
-//  Created by Olivier Robin on 30/10/2016.
-//  Copyright © 2016 fr.ormaa. All rights reserved.
+//  Created by Liqiang Ye on 10/13/2017.
+//  Copyright © 2017 Liqiang Ye All rights reserved.
 //
 
 import UIKit

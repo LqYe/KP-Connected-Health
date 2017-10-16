@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  CentralManager
 //
-//  Created by Olivier Robin on 04/03/2017.
-//  Copyright © 2017 fr.ormaa. All rights reserved.
+//  Created by Liqiang Ye on 10/13/2017.
+//  Copyright © 2017 Liqiang Ye All rights reserved.
 //
 
 import UIKit
@@ -58,7 +58,6 @@ class ViewController: UIViewController, BLEProtocol {
     // change it as you want. but change it also on peripheral side.
     // note : if you want to connect using the main service of the peripheral : this peripheral need to advertise its service, in advertise area
     //
-    //let peripheralName = "ORMAA_P1.0"
     let peripheralUUID = "00001901-0000-1000-8000-00805F9B34FB"
     let characRead = "2AC6A7BF-2C60-42D0-8013-AECEF2A124C0" //"00002B00-0000-1000-8000-00805F9B34FB"
     let characWrite = "9B89E762-226A-4BBB-A381-A4B8CC6E1105"

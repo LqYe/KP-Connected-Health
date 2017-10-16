@@ -2,8 +2,8 @@
 //  Advertisement.swift
 //  CentralManager
 //
-//  Created by Olivier Robin on 04/03/2017.
-//  Copyright © 2017 fr.ormaa. All rights reserved.
+//  Created by Liqiang Ye on 10/13/2017.
+//  Copyright © 2017 Liqiang Ye All rights reserved.
 //
 
 import Foundation

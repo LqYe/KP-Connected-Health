@@ -1,9 +1,8 @@
 //
 //  BLECentraManager+InitStartStop.swift
 //  BlueToothCentral
-//
-//  Created by Olivier Robin on 07/11/2016.
-//  Copyright © 2016 fr.ormaa. All rights reserved.
+//  Created by Liqiang Ye on 10/13/2017.
+//  Copyright © 2017 Liqiang Ye All rights reserved.
 //
 
 
@@ -48,7 +47,7 @@ extension BLECentralManager {
         // is it needed ???
         usleep(500000)
         
-        centralManager = CBCentralManager(delegate: self, queue: nil, options:[CBCentralManagerOptionRestoreIdentifierKey: "fr.ormaa.centralManager"])
+        centralManager = CBCentralManager(delegate: self, queue: nil, options:[CBCentralManagerOptionRestoreIdentifierKey: "Liqiang YecentralManager"])
     }
 
     

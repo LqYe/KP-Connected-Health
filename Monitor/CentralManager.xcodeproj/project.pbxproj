@@ -203,7 +203,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = fr.ormaa;
+				ORGANIZATIONNAME = com.yeliqiang;
 				TargetAttributes = {
 					1C10F2671E6B1F7B00DDD431 = {
 						CreatedOnToolsVersion = 8.2.1;

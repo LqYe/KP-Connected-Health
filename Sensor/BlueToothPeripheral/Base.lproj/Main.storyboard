@@ -8,87 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Arial.ttf">
-            <string>ArialMT</string>
-        </array>
-        <array key="ChalkboardSE.ttc">
-            <string>ChalkboardSE-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
-        <!--My View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="MyViewController" customModule="BlueToothPeripheral" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JtZ-dG-vQ8">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KP Health Sensor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W8-wN-8Xz">
-                                        <rect key="frame" x="8" y="8" width="398" height="20"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e0F-kj-i7E">
-                                        <rect key="frame" x="8" y="36" width="51" height="31"/>
-                                        <connections>
-                                            <action selector="switchPeripheralOnOff:" destination="BYZ-38-t0r" eventType="valueChanged" id="bl0-6Z-z9S"/>
-                                        </connections>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power ON/OFF the Sensor" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JfK-d3-awd">
-                                        <rect key="frame" x="65" y="36" width="341" height="20"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TaT-Ix-inw">
-                                        <rect key="frame" x="8" y="362" width="304" height="178"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.23023874893586893" green="0.27137847627899003" blue="0.60831823671497587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="8W8-wN-8Xz" secondAttribute="trailing" constant="8" id="0g6-ze-kvT"/>
-                                    <constraint firstAttribute="trailing" secondItem="JfK-d3-awd" secondAttribute="trailing" constant="8" id="5KL-ip-qtO"/>
-                                    <constraint firstItem="JfK-d3-awd" firstAttribute="leading" secondItem="e0F-kj-i7E" secondAttribute="trailing" constant="8" id="BGC-BX-y5q"/>
-                                    <constraint firstItem="8W8-wN-8Xz" firstAttribute="top" secondItem="JtZ-dG-vQ8" secondAttribute="top" constant="8" id="ISu-h3-ZrZ"/>
-                                    <constraint firstItem="8W8-wN-8Xz" firstAttribute="leading" secondItem="JtZ-dG-vQ8" secondAttribute="leading" constant="8" id="RG3-yJ-K4e"/>
-                                    <constraint firstItem="e0F-kj-i7E" firstAttribute="leading" secondItem="JtZ-dG-vQ8" secondAttribute="leading" constant="8" id="XeH-N6-E2w"/>
-                                    <constraint firstItem="JfK-d3-awd" firstAttribute="top" secondItem="8W8-wN-8Xz" secondAttribute="bottom" constant="8" id="hba-ah-fmY"/>
-                                    <constraint firstItem="e0F-kj-i7E" firstAttribute="top" secondItem="8W8-wN-8Xz" secondAttribute="bottom" constant="8" id="m1B-GR-9o1"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="JtZ-dG-vQ8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7No-bH-AX7"/>
-                            <constraint firstAttribute="trailing" secondItem="JtZ-dG-vQ8" secondAttribute="trailing" id="LjN-gM-mta"/>
-                            <constraint firstItem="JtZ-dG-vQ8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hNh-8a-ngM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JtZ-dG-vQ8" secondAttribute="bottom" id="mC7-ZP-xHf"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="logTextView" destination="TaT-Ix-inw" id="WYp-yK-CMo"/>
-                        <outlet property="switchPeripheral" destination="e0F-kj-i7E" id="ZJG-ui-Gq2"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2729" y="118"/>
-        </scene>
         <!--KP Health Sensor-->
         <scene sceneID="0r0-fy-HRq">
             <objects>
@@ -284,23 +204,13 @@
                                     <action selector="switchPeripheralOnOff:" destination="Dl1-49-T75" eventType="touchUpInside" id="WEB-cl-1cA"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHs-6p-HKO">
-                                <rect key="frame" x="12" y="580" width="390" height="144"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.29803921570000003" green="0.76078431369999999" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.29803921568627451" green="0.76078431372549016" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kTM-Rm-DeS" firstAttribute="top" secondItem="RHs-6p-HKO" secondAttribute="bottom" constant="12" id="1vF-az-aRF"/>
                             <constraint firstItem="61e-Ry-vPP" firstAttribute="top" secondItem="bQV-YX-Xxl" secondAttribute="bottom" constant="35" id="5AM-0a-Vc2"/>
                             <constraint firstItem="61e-Ry-vPP" firstAttribute="centerX" secondItem="AQh-IC-hIj" secondAttribute="centerX" id="6Jn-oS-D80"/>
-                            <constraint firstItem="RHs-6p-HKO" firstAttribute="leading" secondItem="AQh-IC-hIj" secondAttribute="leading" constant="12" id="DW9-RR-hOJ"/>
-                            <constraint firstAttribute="trailing" secondItem="RHs-6p-HKO" secondAttribute="trailing" constant="12" id="fkq-vh-xXh"/>
                             <constraint firstAttribute="trailing" secondItem="xdb-KO-M4P" secondAttribute="trailing" id="gLq-Ch-jOR"/>
-                            <constraint firstItem="RHs-6p-HKO" firstAttribute="top" secondItem="xdb-KO-M4P" secondAttribute="bottom" constant="12" id="nhA-g8-WqE"/>
+                            <constraint firstItem="kTM-Rm-DeS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xdb-KO-M4P" secondAttribute="bottom" constant="12" id="ndg-DF-II1"/>
                             <constraint firstItem="xdb-KO-M4P" firstAttribute="leading" secondItem="AQh-IC-hIj" secondAttribute="leading" id="rhX-VS-khW"/>
                             <constraint firstItem="xdb-KO-M4P" firstAttribute="top" secondItem="61e-Ry-vPP" secondAttribute="bottom" constant="35" id="zQ5-O7-yd3"/>
                         </constraints>
@@ -308,7 +218,6 @@
                     <navigationItem key="navigationItem" title="KP Health Sensor" id="vIN-Ej-2Ug"/>
                     <connections>
                         <outlet property="bpmLabel" destination="4nL-bK-eiZ" id="qu0-Mt-8mQ"/>
-                        <outlet property="logTextView" destination="RHs-6p-HKO" id="Fy7-sX-FtG"/>
                         <outlet property="powerButton" destination="61e-Ry-vPP" id="vCF-if-ZVR"/>
                         <outlet property="pressureLabel" destination="6Ty-YT-lUs" id="Zb6-SO-PXd"/>
                         <outlet property="sensorControllerView" destination="xdb-KO-M4P" id="qd8-ip-WXY"/>

@@ -2,8 +2,8 @@
 //  BLECentralManager.swift
 //  BlueToothCentral
 //
-//  Created by Olivier Robin on 30/10/2016.
-//  Copyright © 2016 fr.ormaa. All rights reserved.
+//  Created by Liqiang Ye on 10/13/2017.
+//  Copyright © 2017 Liqiang Ye All rights reserved.
 //
 
 import Foundation
@@ -19,7 +19,7 @@ import AudioToolbox
 // can be generated using "uuidgen" under osx console
 
 
-let peripheralName = "ORMAA_1.0"
+let peripheralName = "KP_1.0"
 // Service
 let BLEService = "00001901-0000-1000-8000-00805f9b34fb" // generic service
 

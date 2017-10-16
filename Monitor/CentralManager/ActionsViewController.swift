@@ -3,7 +3,7 @@
 //  CentralManager
 //
 //  Created by Liqiang Ye on 10/15/17.
-//  Copyright © 2017 fr.ormaa. All rights reserved.
+//  Copyright © 2017 Liqiang Ye All rights reserved.
 //
 
 import UIKit
