@@ -39,7 +39,6 @@ class ViewController: UIViewController, BLEProtocol {
     
     @IBOutlet weak var monitorView: UIView!
     
-    @IBOutlet weak var warningLabel: UILabel!
     
     
     @IBOutlet weak var bpmLabel: UILabel!
@@ -70,6 +69,18 @@ class ViewController: UIViewController, BLEProtocol {
 
         appDelegate =  UIApplication.shared.delegate as! AppDelegate?
         appDelegate!.singleton.logger.log("viewDidLoad")
+        
+        monitorView.isHidden = true
+        
+        let animation: CATransition = CATransition()
+        animation.duration = 1.0
+        animation.type = kCATransitionFade
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        bpmLabel.layer.add(animation, forKey: "changeTextTransition")
+        
+        
+        initPulsators()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -87,10 +98,6 @@ class ViewController: UIViewController, BLEProtocol {
                                                                              centralName: appDelegate!.singleton.centralManagerToRestore)
         }
         
-        monitorView.isHidden = true
-        warningLabel.isHidden = true
-        
-        initPulsators()
     }
     
     func log(_ object: Any?) {
@@ -185,18 +192,9 @@ class ViewController: UIViewController, BLEProtocol {
             self.connectionStatusLabel.text = "Connected to KP Health Sensor"
             self.monitorView.isHidden = false
             
-            
-            self.hPulsator.backgroundColor = UIColor.white.cgColor
             self.hPulsator.start()
-
-            
-            self.tPulsator.backgroundColor = UIColor.white.cgColor
             self.tPulsator.start()
-            
-            
-            self.pPulsator.backgroundColor = UIColor.white.cgColor
             self.pPulsator.start()
-            
         }
     }
     
@@ -253,6 +251,12 @@ class ViewController: UIViewController, BLEProtocol {
         let temp = Int(messageArray[1]) ?? 97
         let systolic = Int(messageArray[2]) ?? 120
         let diastolic = Int(messageArray[3]) ?? 80
+        
+        if !self.hPulsator.isPulsating {
+            self.hPulsator.start()
+            self.tPulsator.start()
+            self.pPulsator.start()
+        }
 
         if heartBeat <= 100 && heartBeat >= 60 {
             self.hPulsator.backgroundColor = UIColor.green.cgColor
@@ -276,6 +280,9 @@ class ViewController: UIViewController, BLEProtocol {
             if !alertShown{
               showHealthAlertDialog()
               alertShown = true
+                
+              self.appDelegate?.singleton.bluetoothController.write(uuid: self.characWrite, message: "We are connected...")
+
             }
         }
         
@@ -289,7 +296,7 @@ class ViewController: UIViewController, BLEProtocol {
         
         // Prepare the popup assets
         let title = "KP Health Alert"
-        let message = "Your heart rate surges to a critical level and your blood pressure is low. \nAre you experiencing any of symptoms below?\n1. Chest pain or discomfort?\n2. Shortness of breath or anxiety?\n3. Pain in the jaw, neck, back or arms?\n4. Nausea and/or dizziness?\n5. Vomiting, indigestion or heartburn?\n6. Cold sweat?"
+        let message = "We notice that your heart rate surges to a critical level and your blood pressure is dropping. \nAre you experiencing any of symptoms below?\n1. Chest pain or discomfort?\n2. Shortness of breath or anxiety?\n3. Pain in the jaw, neck, back or arms?\n4. Nausea and/or dizziness?\n5. Vomiting, indigestion or heartburn?\n6. Cold sweat?"
         let image = UIImage(named: "alert")
         
         // Create the dialog

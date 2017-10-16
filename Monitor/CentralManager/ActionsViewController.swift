@@ -54,6 +54,7 @@ class ActionsViewController: UIViewController {
         
         // Create second button
         let buttonTwo = DefaultButton(title: "OK") {
+            self.makePhoneCallToEmergencyLine()
         }
         
         // Add buttons to dialog
@@ -93,6 +94,14 @@ class ActionsViewController: UIViewController {
         
         // Present dialog
         self.present(popup, animated: animated, completion: nil)
+    }
+    
+    func makePhoneCallToEmergencyLine() {
+        
+        if let url = URL(string: "tel://\(9251001000)") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+        
     }
     /*
     // MARK: - Navigation

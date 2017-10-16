@@ -29,11 +29,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="KP Health Senor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ya4-nm-3r5">
                                 <rect key="frame" x="72" y="235" width="231" height="197"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.29803921570000003" green="0.76078431369999999" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ya4-nm-3r5" firstAttribute="centerY" secondItem="CTS-U6-Qfd" secondAttribute="centerY" id="AVf-W2-j7v"/>
                             <constraint firstItem="Ya4-nm-3r5" firstAttribute="centerX" secondItem="CTS-U6-Qfd" secondAttribute="centerX" id="zg3-Bv-WyX"/>

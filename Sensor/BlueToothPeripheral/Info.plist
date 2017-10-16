@@ -46,6 +46,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>CFBundleDisplayName</key>
-	<string>KP Health Sensor</string>
+	<string>KPHealthSensor</string>
 </dict>
 </plist>

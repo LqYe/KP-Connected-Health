@@ -58,9 +58,9 @@ class SensorViewController: UIViewController, BLEPeripheralProtocol{
             ble?.delegate = self
             ble!.startBLEPeripheral()
             sensorControllerView.isHidden = false
-            bpmLabel.text = "\(ble?.heartRate ?? 70) bpm"
+            bpmLabel.text = "\(ble?.heartRate ?? 85) bpm"
             tempLabel.text = "\(ble?.bodyTemperature ?? 97) ℉"
-            pressureLabel.text = "\(ble?.systolic ?? 120)/\(ble?.diastolic ?? 80) mmHg"
+            pressureLabel.text = "\(ble?.systolic ?? 100)/\(ble?.diastolic ?? 70) mmHg"
             //logTextView.isHidden = false
         }
         else {
@@ -74,13 +74,13 @@ class SensorViewController: UIViewController, BLEPeripheralProtocol{
     }
     
     @IBAction func onBPMminusButtonClicked(_ sender: Any) {
-        ble?.heartRate -= 1
+        ble?.heartRate -= 10
         bpmLabel.text = "\(ble?.heartRate ?? 70) bpm"
     }
     
     
     @IBAction func onBPMplusButtonClicked(_ sender: Any) {
-        ble?.heartRate += 1
+        ble?.heartRate += 10
         bpmLabel.text = "\(ble?.heartRate ?? 70) bpm"
     }
     
@@ -95,14 +95,14 @@ class SensorViewController: UIViewController, BLEPeripheralProtocol{
     }
     
     @IBAction func onPressureminusButtonClicked(_ sender: Any) {
-        ble?.systolic -= 5
+        ble?.systolic -= 10
         ble?.diastolic -= 5
         
         pressureLabel.text = "\(ble?.systolic ?? 120)/\(ble?.diastolic ?? 80) mmHg"
     }
     
     @IBAction func onPressureplusButtonClicked(_ sender: Any) {
-        ble?.systolic += 5
+        ble?.systolic += 10
         ble?.diastolic += 5
         
         pressureLabel.text = "\(ble?.systolic ?? 120)/\(ble?.diastolic ?? 80) mmHg"

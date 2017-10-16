@@ -10,6 +10,7 @@ import Foundation
 import CoreBluetooth
 import UIKit
 import UserNotifications
+import AudioToolbox
 
 // Apple documentation :
 // https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/CoreBluetoothBackgroundProcessingForIOSApps/PerformingTasksWhileYourAppIsInTheBackground.html
@@ -51,10 +52,10 @@ class BLEPeripheralManager : NSObject, CBPeripheralManagerDelegate {
     
     var cpt = 0
     
-    var heartRate = 70
+    var heartRate = 85
     var bodyTemperature = 97
-    var systolic = 120
-    var diastolic = 80
+    var systolic = 100
+    var diastolic = 70
     
     // start the PeripheralManager
     //
@@ -190,7 +191,7 @@ class BLEPeripheralManager : NSObject, CBPeripheralManagerDelegate {
             self.notifyCentral = central
             
             // start a timer, which will update the value, every xyz seconds.
-            self.notifyValueTimer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.notifyValue), userInfo: nil, repeats: true)
+            self.notifyValueTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.notifyValue), userInfo: nil, repeats: true)
         }
 
     }
@@ -231,6 +232,9 @@ class BLEPeripheralManager : NSObject, CBPeripheralManagerDelegate {
             let str = NSString(data: requests[0].value!, encoding:String.Encoding.utf16.rawValue)!
             print("value sent by central Manager :\n" + String(describing: str))
         }
+        
+        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+        
         peripheral.respond(to: requests[0], withResult: CBATTError.success)
     }
     

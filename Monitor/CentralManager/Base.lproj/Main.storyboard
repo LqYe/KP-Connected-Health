@@ -120,8 +120,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTa-qd-pEK">
-                                <rect key="frame" x="20" y="248" width="374" height="401"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTa-qd-pEK">
+                                <rect key="frame" x="20" y="248" width="374" height="439"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDd-xt-ao8">
                                         <rect key="frame" x="0.0" y="12" width="374" height="81"/>
@@ -201,15 +201,16 @@
                                             <constraint firstItem="CBe-2y-Bbf" firstAttribute="leading" secondItem="Ghu-aK-dve" secondAttribute="leading" constant="25" id="wL4-Qy-kgw"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Based on your medical histroy, we recommend you to keep heart rate stable between 60 ~ 100 bpm and blood pressure below 120/80" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiS-mh-cNk">
-                                        <rect key="frame" x="0.0" y="367" width="374" height="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiS-mh-cNk">
+                                        <rect key="frame" x="0.0" y="405" width="374" height="22"/>
+                                        <string key="text">Based on your medical histroy, we recommend you to keep heart rate stable between 60 ~ 100 bpm and blood pressure stable between 80/60 ~ 120/80 mmHg</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="MiS-mh-cNk" firstAttribute="top" secondItem="Ghu-aK-dve" secondAttribute="bottom" constant="12" id="0CV-72-CgU"/>
+                                    <constraint firstItem="MiS-mh-cNk" firstAttribute="top" secondItem="Ghu-aK-dve" secondAttribute="bottom" constant="50" id="0CV-72-CgU"/>
                                     <constraint firstItem="Ghu-aK-dve" firstAttribute="leading" secondItem="uTa-qd-pEK" secondAttribute="leading" id="0zh-aT-tK1"/>
                                     <constraint firstAttribute="trailing" secondItem="wDd-xt-ao8" secondAttribute="trailing" id="CsO-TV-vnX"/>
                                     <constraint firstItem="wDd-xt-ao8" firstAttribute="top" secondItem="uTa-qd-pEK" secondAttribute="top" constant="12" id="D1h-Ib-dsD"/>
@@ -224,27 +225,18 @@
                                     <constraint firstItem="MiS-mh-cNk" firstAttribute="leading" secondItem="uTa-qd-pEK" secondAttribute="leading" id="tze-5E-3rf"/>
                                 </constraints>
                             </view>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGc-DX-PCl">
-                                <rect key="frame" x="20" y="669" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LGc-DX-PCl" firstAttribute="leading" secondItem="jqJ-HW-ZLv" secondAttribute="leading" constant="20" id="2DC-f5-Zqp"/>
                             <constraint firstItem="mfS-JW-9ol" firstAttribute="leading" secondItem="jqJ-HW-ZLv" secondAttribute="leading" id="7Ye-o2-5xA"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IpL-4D-H7l" secondAttribute="trailing" constant="20" id="8DP-wW-rs5"/>
                             <constraint firstItem="eZx-NW-z3V" firstAttribute="top" secondItem="upJ-E9-3vE" secondAttribute="bottom" constant="20" id="B85-JU-dJv"/>
-                            <constraint firstItem="LGc-DX-PCl" firstAttribute="top" secondItem="uTa-qd-pEK" secondAttribute="bottom" constant="20" id="Lkg-ht-k7w"/>
                             <constraint firstItem="IpL-4D-H7l" firstAttribute="centerX" secondItem="jqJ-HW-ZLv" secondAttribute="centerX" id="LxA-wQ-wkU"/>
                             <constraint firstItem="uTa-qd-pEK" firstAttribute="leading" secondItem="jqJ-HW-ZLv" secondAttribute="leading" constant="20" id="MdE-lO-64r"/>
                             <constraint firstItem="uTa-qd-pEK" firstAttribute="top" secondItem="IpL-4D-H7l" secondAttribute="bottom" constant="20" id="NWh-L7-llX"/>
+                            <constraint firstItem="IyW-QV-L3Y" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uTa-qd-pEK" secondAttribute="bottom" constant="20" id="Un1-O7-qum"/>
                             <constraint firstItem="IpL-4D-H7l" firstAttribute="top" secondItem="eZx-NW-z3V" secondAttribute="bottom" constant="20" id="Wgo-f9-XaM"/>
                             <constraint firstItem="IyW-QV-L3Y" firstAttribute="top" secondItem="mfS-JW-9ol" secondAttribute="bottom" id="aqg-8l-JX3"/>
-                            <constraint firstAttribute="trailing" secondItem="LGc-DX-PCl" secondAttribute="trailing" constant="20" id="gwh-Dk-gQw"/>
-                            <constraint firstItem="IyW-QV-L3Y" firstAttribute="top" relation="greaterThanOrEqual" secondItem="LGc-DX-PCl" secondAttribute="bottom" constant="5" id="l5J-Ne-GDU"/>
                             <constraint firstAttribute="trailing" secondItem="uTa-qd-pEK" secondAttribute="trailing" constant="20" id="lBJ-A5-GCs"/>
                             <constraint firstItem="IpL-4D-H7l" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jqJ-HW-ZLv" secondAttribute="leading" constant="20" id="mtv-XU-Y2o"/>
                             <constraint firstItem="mfS-JW-9ol" firstAttribute="top" secondItem="upJ-E9-3vE" secondAttribute="bottom" id="nBH-yt-2nd"/>
@@ -264,7 +256,6 @@
                         <outlet property="pressureLabel" destination="RYi-oP-pXc" id="zCG-11-KK9"/>
                         <outlet property="tempImageView" destination="E1i-WZ-prs" id="jzZ-ka-V0U"/>
                         <outlet property="tempLabel" destination="PIN-Ng-pVy" id="tU2-da-Oik"/>
-                        <outlet property="warningLabel" destination="LGc-DX-PCl" id="ePN-k0-AK3"/>
                         <segue destination="5cc-SQ-P7Z" kind="presentation" identifier="showActions" id="iNc-Ei-kbN"/>
                     </connections>
                 </viewController>
