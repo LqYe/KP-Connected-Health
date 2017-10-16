@@ -7,4 +7,5 @@ target 'CentralManager' do
 
   # Pods for CentralManager
   pod "Pulsator"
+  pod "PopupDialog"
 end

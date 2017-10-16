@@ -26,6 +26,7 @@
 		1C10F29A1E6B277600DDD431 /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C10F2991E6B277600DDD431 /* Datas.swift */; };
 		1C10F29C1E6B318F00DDD431 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C10F29B1E6B318F00DDD431 /* Extensions.swift */; };
 		76D31EE2CD310C7F413F95B1 /* Pods_CentralManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9476305EEEF4325D08B9D /* Pods_CentralManager.framework */; };
+		982A64BE1F944E88000D5708 /* ActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982A64BD1F944E88000D5708 /* ActionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		1C10F29B1E6B318F00DDD431 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		43E9476305EEEF4325D08B9D /* Pods_CentralManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CentralManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F63134994AEC32AD0F9D622 /* Pods-CentralManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CentralManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CentralManager/Pods-CentralManager.debug.xcconfig"; sourceTree = "<group>"; };
+		982A64BD1F944E88000D5708 /* ActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsViewController.swift; sourceTree = "<group>"; };
 		E2D063C07E17E80D07D37173 /* Pods-CentralManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CentralManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-CentralManager/Pods-CentralManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 				1C10F27D1E6B1F9200DDD431 /* BLE Stack */,
 				1C10F26D1E6B1F7B00DDD431 /* ViewController.swift */,
 				1C10F2941E6B228200DDD431 /* BluetoothController.swift */,
+				982A64BD1F944E88000D5708 /* ActionsViewController.swift */,
 			);
 			path = CentralManager;
 			sourceTree = "<group>";
@@ -268,10 +271,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CentralManager/Pods-CentralManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/Pulsator/Pulsator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulsator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +315,7 @@
 				1C10F2891E6B1FBD00DDD431 /* BLE_ServicesCharacteristics.swift in Sources */,
 				1C10F2881E6B1FBD00DDD431 /* BLE_ReadWrite.swift in Sources */,
 				1C10F2861E6B1FBD00DDD431 /* BLE_CentralManager.swift in Sources */,
+				982A64BE1F944E88000D5708 /* ActionsViewController.swift in Sources */,
 				1C10F28B1E6B1FBD00DDD431 /* BLE_Tools.swift in Sources */,
 				1C10F29A1E6B277600DDD431 /* Datas.swift in Sources */,
 				1C10F26E1E6B1F7B00DDD431 /* ViewController.swift in Sources */,

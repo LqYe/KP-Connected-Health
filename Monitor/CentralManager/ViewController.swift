@@ -8,6 +8,7 @@
 
 import UIKit
 import Pulsator
+import PopupDialog
 
 class ViewController: UIViewController, BLEProtocol {
     
@@ -46,6 +47,10 @@ class ViewController: UIViewController, BLEProtocol {
     @IBOutlet weak var tempLabel: UILabel!
     
     @IBOutlet weak var pressureLabel: UILabel!
+    
+    
+    var alertShown: Bool = false
+    
     // this is the name of the peripheral that we are looking for.
     // change it as you want. but change it also on peripheral side.
     // note : if you want to connect using the main service of the peripheral : this peripheral need to advertise its service, in advertise area
@@ -267,9 +272,43 @@ class ViewController: UIViewController, BLEProtocol {
             self.pPulsator.backgroundColor = UIColor.blue.cgColor
         }
         
+        if heartBeat > 120 && systolic < 80 && diastolic < 60 {
+            if !alertShown{
+              showHealthAlertDialog()
+              alertShown = true
+            }
+        }
+        
         self.bpmLabel.text = "\(heartBeat) bpm"
         self.tempLabel.text = "\(temp) ℉"
-        self.pressureLabel.text = "\(systolic)/\(diastolic) mmHg"    }
+        self.pressureLabel.text = "\(systolic)/\(diastolic) mmHg"
+        
+    }
+    
+    func showHealthAlertDialog(animated: Bool = true) {
+        
+        // Prepare the popup assets
+        let title = "KP Health Alert"
+        let message = "Your heart rate surges to a critical level and your blood pressure is low. \nAre you experiencing any of symptoms below?\n1. Chest pain or discomfort?\n2. Shortness of breath or anxiety?\n3. Pain in the jaw, neck, back or arms?\n4. Nausea and/or dizziness?\n5. Vomiting, indigestion or heartburn?\n6. Cold sweat?"
+        let image = UIImage(named: "alert")
+        
+        // Create the dialog
+        let popup = PopupDialog(title: title, message: message, image: image)
+        
+        let yesButton = DefaultButton(title: "Yes", height: 60, dismissOnTap: true) {
+            self.performSegue(withIdentifier: "showActions", sender: nil)
+        }
+        
+        let noButton = DefaultButton(title: "No", height: 60, dismissOnTap: true) {
+            print("no")
+        }
+        
+        // Add buttons to dialog
+        popup.addButtons([yesButton, noButton])
+        
+        // Present dialog
+        self.present(popup, animated: animated, completion: nil)
+    }
     
     func valueWrite(message: String) {
         self.addText(text: "write : " + message)
