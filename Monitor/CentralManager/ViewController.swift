@@ -50,6 +50,10 @@ class ViewController: UIViewController, BLEProtocol {
     
     var alertShown: Bool = false
     
+    var syncTimer: Timer!
+    
+    var showSyncLable: Bool = true
+    
     // this is the name of the peripheral that we are looking for.
     // change it as you want. but change it also on peripheral side.
     // note : if you want to connect using the main service of the peripheral : this peripheral need to advertise its service, in advertise area
@@ -195,7 +199,19 @@ class ViewController: UIViewController, BLEProtocol {
             self.hPulsator.start()
             self.tPulsator.start()
             self.pPulsator.start()
+            
+            self.syncTimer = Timer.scheduledTimer(timeInterval: 7, target: self, selector: #selector(self.updateSyncLabel), userInfo: nil, repeats: true)
         }
+    }
+    
+    func updateSyncLabel() {
+        
+        if showSyncLable {
+            connectionStatusLabel.text = "Syncing health data with KP Cloud..."
+        } else {
+            connectionStatusLabel.text = "Connected to KP Health Sensor"
+        }
+        self.showSyncLable = !self.showSyncLable
     }
     
     func initPulsators() {
